@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Converter Phase</title>
+</head>
+<body>
+
+<form id="converter">
+
+        <div id="result2" class="body"> 
+        
+        </div>
+
+    <div class="body">
+        <input class="input" type="text" placeholder="Area" id="value3">
+        <select id="operator1">
+                <option value="sqm">Square Metre</option>
+                <option value="hec">Hectare</option>
+                <option value="acr">Acre</option>
+                <option value="sqi">Square Inch</option>
+                <option value="sqf">Square Foot</option>
+                <option value="sqy">Square Yard</option>
+                <option value="sqmi">Square Mile</option>
+                <option value="sqk">Square Kilometre</option>
+                
+        </select>
+    </div>
+
+    <div class="body">
+        <select id="operator2">
+            <option value="sqm">To Square Metre</option>
+            <option value="hec">To Hectare</option>
+            <option value="acr">To Acre</option>
+            <option value="sqi">To Square Inch</option>
+            <option value="sqf">To Square Foot</option>
+            <option value="sqy">To Square Yard</option>
+            <option value="sqmi">To Square Mile</option>
+            <option value="sqk">To Square Kilometre</option>
+        </select>
+    </div>
+        
+        <div class="body">
+            <button class="but" type="button" onclick="con()">Convert</button>
+        </div>      
+    </form>
+
+    <div id="back">
+            <a href="index.html"><button>&#8592</button></a>
+            <a href="converter2.html" id="next"><button>&#8594</button></a>
+
+        </div> 
+</body>
+
+<style>
+    body{
+        font-family: sans-serif;
+        background-color: black;
+        font-size: 30px
+    }
+
+    #converter{
+        width: 320px;
+        height: 520px;
+        background-color: #eaedef;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+    }
+
+    .body {
+        padding: 20px;
+    }
+
+    input{
+        margin-top: 10px;
+        padding: 15px;
+        padding-left: 75px;
+        text-align: right;
+        border-style: double;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #result2{
+        padding-top: 20px;
+        text-align: right;
+        padding: 50px;
+       
+    }
+
+    select{
+        background-color: #20b2aa;
+        padding: 10px;
+        border-style: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #operator2{
+        background-color: #7d93e0;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button{
+        background-color: indianred;
+        padding: 10px;
+        border-radius: 20px;
+        border-style: none;
+        font-size: 15px;
+        border-width: 0;
+        font-weight: bold;
+        outline: 0;
+    }
+
+    #back{
+        padding: 20px;
+        margin-left: 60px;
+    }
+    #back button{
+        padding: 20px;
+        border-radius: 50px;
+        border-style: none;
+        outline: 0;
+    }
+
+    #next{
+        padding: 20px;
+        margin-left: 15px;
+    }
+    #next button{
+        padding: 20px;
+        border-radius: 50px;
+        border-style: none;
+        outline: 0;
+        background-color: white;
+    }
+
+</style>
+
+<script src="main.js"></script>
+</html>
