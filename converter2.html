@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Converter Phase2</title>
+</head>
+<body>
+
+<form id="converter">
+
+        <div id="result3" class="body"> 
+        
+        </div>
+        <div class="body">
+            <input class="input" type="text" placeholder="Length" id="value4">
+            <select id="operator3">
+                <option value="kil">kilometre</option>
+                <option value="met">Metre</option>
+                <option value="cen">Centimetre</option>
+                <option value="mil">Millimetre</option>
+                <option value="mic">Micrometre</option>
+                <option value="nan">Nanometre</option>
+                <option value="mile">Mile</option>
+                <option value="yar">Yard</option>
+                <option value="foot">Foot</option>
+                <option value="inc">Inch</option>
+                <option value="naum">Nautical Mile</option>
+            </select>
+        </div>
+
+    <div class="body">
+    <select id="operator4">
+        <option value="kil">To kilometre</option>
+        <option value="met">To Metre</option>
+        <option value="cen">To Centimetre</option>
+        <option value="mil">To Millimetre</option>
+        <option value="mic">To Micrometre</option>
+        <option value="nan">To Nanometre</option>
+        <option value="mile">To Mile</option>
+        <option value="yar">To Yard</option>
+        <option value="foot">To Foot</option>
+        <option value="inc">To Inch</option>
+        <option value="naum">To Nautical Mile</option>
+    </select>
+    </div>
+
+    <div class="body">
+        <button class="but" type="button" onclick="conv()">Convert</button>
+    </div>
+    </form>
+
+    <div id="back">
+            <a href="converter.html"><button>&#8592</button></a>
+    </div>
+</body>
+
+<style>
+        body{
+            font-family: sans-serif;
+            background-color: black;
+            font-size: 30px
+        }
+    
+        #converter{
+            width: 320px;
+            height: 520px;
+            background-color: #eaedef;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+        }
+    
+        .body {
+            padding: 20px;
+        }
+    
+        input{
+            margin-top: 10px;
+            padding: 15px;
+            padding-left: 75px;
+            text-align: right;
+            border-style: double;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    
+        #result3{
+            padding-top: 20px;
+            text-align: right;
+            padding: 50px;
+           
+        }
+    
+        select{
+            background-color: #20b2aa;
+            padding: 10px;
+            border-style: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    
+        #operator4{
+            background-color: #7d93e0;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    
+        button{
+            background-color: indianred;
+            padding: 10px;
+            border-radius: 20px;
+            border-style: none;
+            font-size: 15px;
+            border-width: 0;
+            font-weight: bold;
+            outline: 0;
+        }
+    
+        #back{
+            padding: 20px;
+            margin-left: 120px;
+        }
+        #back button{
+            padding: 20px;
+            border-radius: 50px;
+            border-style: none;
+            outline: 0;
+        }
+ </style>
+ <script src="main.js"></script>
+
+</html>
