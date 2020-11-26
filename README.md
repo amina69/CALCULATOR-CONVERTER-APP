@@ -1,2 +1,2 @@
 # CALCULATOR-CONVERTER-APP
-A simple Calculater and Area/Length Converter
+A simple Calculator and Area/Length Converter
